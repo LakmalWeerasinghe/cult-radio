@@ -1,0 +1,9 @@
+image: gitpod/workspace-flutter
+
+tasks:
+  - init: flutter pub get
+  - command: flutter config --enable-web
+
+ports:
+  - port: 3000
+    onOpen: open-preview
